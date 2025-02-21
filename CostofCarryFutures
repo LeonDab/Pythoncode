@@ -1,0 +1,11 @@
+import numpy as np
+
+SP = 5 #Spot price of commodity in USD
+r = 0.01 #Risk free interest rate (x100 for percentage)
+s = 0.01 #Storage cost as % of spot price(x100 for percentage)
+c = 0.02 #Convenience yeild (implied return on holding inventories x100 for percentage)
+t = 4 #Time to maturity of contract
+
+F = SP*np.exp((r+s-c)*t) #F is the fair price of the future according to the CoC model
+
+print(f"A fair futures price is ${F:.3f}")
