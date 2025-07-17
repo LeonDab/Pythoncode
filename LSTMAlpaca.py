@@ -21,8 +21,7 @@ request_params = StockBarsRequest(
     symbol_or_symbols=["RKLB"],
     timeframe=TimeFrame.Day,
     start=datetime(2021, 8, 25),
-    end = datetime(2025, 6, 30)
-)
+    end = datetime(2025, 6, 30))
 
 bars = client.get_stock_bars(request_params)
 
