@@ -15,7 +15,7 @@ from alpaca.data.timeframe import TimeFrame
 
 
 #Get data from Alpaca using my key
-client = StockHistoricalDataClient(api_key="PKF9VP1OQ4J9RCDFWO0W", secret_key="djJia5kAN1y0IooSpDh9YLc3chmCcVRUIRdbaldx")
+client = StockHistoricalDataClient(api_key="INSERT KEY HERE", secret_key="INSERT KEY HERE")
 
 request_params = StockBarsRequest(
     symbol_or_symbols=["RKLB"],
